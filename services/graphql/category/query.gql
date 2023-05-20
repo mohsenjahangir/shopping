@@ -1,0 +1,26 @@
+query GatMac(
+  $where: CategoryWhereInput,
+  $orderBy: [CategoryOrderByWithRelationInput!],
+  $cursor: CategoryWhereUniqueInput,
+){
+  GetManyCategory(
+    where:$where,orderBy:$orderBy,cursor:$cursor
+  ){
+    result{
+      items{
+        id
+        status
+        faName
+        parent
+        slug
+        order
+        media
+        MEDIA{
+          id
+          name
+          key
+        }
+      }
+    }
+  }
+}

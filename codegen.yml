@@ -1,0 +1,13 @@
+overwrite: true
+schema: "https://api.almas-pro.ir/"
+documents: "services/**/*.gql"
+generates:
+  ./services/graphql.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+    config:
+      withHooks: true
+      withHOC: false
+      withComponent: false

@@ -1,0 +1,44 @@
+
+[
+  {
+    "name": "سوپر مارکت",
+    "route": "/category/mac",
+    "id": 0,
+    "isBadge": false,
+    "icon":""
+  },
+  {
+    "name": "پرفروش ترین ها",
+    "route": "/category/iphone",
+    "id": 1,
+    "isBadge": false
+  },
+  {
+    "name": "تخفیف ها و پیشنهادها",
+    "route": "/category/appleWatch",
+    "id": 2,
+    "isBadge": false
+  },
+  {
+    "name": "شگفت‌انگیزها",
+    "route": "/category/ipad",
+    "id": 3,
+    "isBadge": false
+  },
+  {
+    "name": "سوالی دارید؟",
+    "route": "/music",
+    "id": 4,
+    "isBadge": false
+  },
+  {
+    "name": "در فروشگاه ما بفروشید",
+    "route": "/category/accessories",
+    "id": 5,
+    "isBadge": false
+  }
+]
+
+
+
+
