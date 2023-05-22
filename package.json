@@ -21,6 +21,10 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
+    "react-id-swiper": "^4.0.0",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^9.3.2",
     "typescript": "5.0.4"
   },
   "devDependencies": {
@@ -30,6 +34,7 @@
     "@graphql-codegen/typescript-react-apollo": "^3.3.7",
     "@graphql-codegen/typescript-resolvers": "^3.2.1",
     "@svgr/webpack": "^7.0.0",
+    "@types/react-slick": "^0.23.10",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.23",
     "svg-url-loader": "^8.0.0",
