@@ -339,7 +339,7 @@ export const Dropdown = () => {
   };
 
   return (
-    <div className="dropdown relative " onMouseLeave={() => toggleDropdown(false)}>
+    <div className="dropdown relative z-30 " onMouseLeave={() => toggleDropdown(false)}>
       <button
         className=" hover:bg-gray-100 text-gray-800 font-bold    inline-flex items-center border-l-2 border-slate-400 w-full sm:w-auto"
         onMouseEnter={() => toggleDropdown(true)}
@@ -354,7 +354,7 @@ export const Dropdown = () => {
         </svg>
       </button>
       {isOpen && (
-        <div className="dropdown-menu absolute text-gray-700 pt-1 w-full sm:w-auto border-2">
+        <div className="dropdown-menu absolute text-gray-700 pt-1 w-full sm:w-auto border-2 bg-slate-100">
           {categories.map((category) => (
             <div key={category.title} className="sm:inline-block sm:relative sm:mr-2 ">
               <button

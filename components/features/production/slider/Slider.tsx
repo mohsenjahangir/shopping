@@ -6,6 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { useRef, useState } from "react";
 import ArrowIcon from "../../../../public/svg/arrowright.svg"
+import { SlArrowRight } from 'react-icons/sl';
 
 export const Slider = () => {
   const [_, setInit] = useState(false);
@@ -23,7 +24,7 @@ export const Slider = () => {
         slidesPerView={1}
         
         navigation={{ nextEl: nextRef.current, prevEl: prevRef.current }}
-        pagination={{ clickable: true, type: "bullets" }}
+        pagination={{ clickable: true , type: "bullets" }}
         // scrollbar={{ draggable: true }}
         onBeforeInit={(swiper) => {
           swiperRef.current = swiper;
@@ -46,8 +47,8 @@ export const Slider = () => {
         </SwiperSlide>
       </Swiper>
       <div className="absolute z-10 -mt-20 mr-12  flex  justify-start gap-3    ">
-          <button className=" bg-slate-100 rounded-full" ref={nextRef}><ArrowIcon /></button>
-          <button className=" bg-slate-100 rounded-full rotate-180" ref={prevRef}><ArrowIcon /></button>
+          <button className=" bg-slate-100 hover:bg-slate-200 p-3  active:bg-slate-400 rounded-full" ref={nextRef}><SlArrowRight /></button>
+          <button className="  rounded-full bg-slate-100 hover:bg-slate-200 p-3  active:bg-slate-400  rotate-180 " ref={prevRef}><SlArrowRight/></button>
         </div>
     </div>
   );
