@@ -40,7 +40,7 @@ export const HomePage = () => {
           </button>
         </div>
       </div>
-      <div>buttons</div>
+      {/* <div>buttons</div> */}
     </>
   );
 };

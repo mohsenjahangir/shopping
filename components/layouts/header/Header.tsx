@@ -59,7 +59,7 @@ export const Header = () => {
   ]);
 
   return (
-    <div className="2xl:mx-10  lg:mx-3 mt-5 lg:mb-44">
+    <div className="2xl:mx-10  lg:mx-3 mt-5 lg:-mt-5 lg:mb-44">
       <div className=" items-center lg:invisible mb-1 flex justify-between mx-3">
         <div>
           <Category />

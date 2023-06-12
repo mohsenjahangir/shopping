@@ -18,7 +18,7 @@ interface InputProps {
           value={value}
           onChange={onChange}
           placeholder="ایمیل شما"
-          className={`bg-gray-100  px-4 py-2 ${
+          className={`bg-gray-100 rounded-xl  px-4 py-2 ${
             error
               ? "border-red-500 focus:border-red-500"
               : "border-gray-300 focus:border-blue-500"

@@ -8,7 +8,7 @@ import Icon5 from "../../../public/svg/icon5.svg";
 import InstIcon from "../../../public/svg/insta.svg";
 import WhatsIcon from "../../../public/svg/whats.svg";
 import TelIcon from "../../../public/svg/tel.svg";
-import Input from "./input";
+import Input from "./Input";
 import MycatIcon from "../../../public/svg/mycat.svg";
 import AndrIcon from "../../../public/svg/andr.svg";
 import BazarIcon from "../../../public/svg/bazar.svg";
@@ -63,25 +63,25 @@ export const Footer = () => {
   ];
 
   return (
-    <div className="2xl:px-10  lg:px-3 pt-5 mt-4 mb-36 border-t-2 border-slate-200">
-      <div className=" grid grid-cols-2">
-        <div>
-          <div className=" mb-4">
-            <IconVitsel />
+    <div className="2xl:px-10   pt-5 px-4 mt-4 mb-36 border-t-2 border-slate-200">
+      <div className="grid grid-cols-1">
+        <div className=" mb-4">
+          <IconVitsel />
+        </div>
+        <div className=" lg:flex">
+          <div className=" lg:border-l-2 truncate border-gray-500 pl-3">
+            تلفن پشتیبانی 9364358506-098
           </div>
-          <div className=" flex">
-            <div className=" border-l-2 border-gray-500 pl-3">
-              تلفن پشتیبانی 9364358506-098
-            </div>
-            <div className=" pr-4">۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم</div>
+          <div className=" lg:pr-4 truncate">
+            ۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم
           </div>
         </div>
       </div>
-      <div className=" flex justify-between mt-12 mx-16">
+      <div className=" flex justify-between lg:mt-12 mx-16 invisible lg:visible">
         {items.map((item) => (
           <div>
             <div className="">
-              <div className=" flex justify-center mb-3">
+              <div className=" flex justify-center lg:mb-3">
                 <svg className=" w-10" viewBox="0 0 24 24">
                   {item.icon}
                 </svg>
@@ -91,7 +91,7 @@ export const Footer = () => {
           </div>
         ))}
       </div>
-      <div className=" grid grid-cols-4 mt-10">
+      <div className=" grid lg:grid-cols-4 grid-col gap-5   lg:mt-10  -mt-16 ">
         <div className=" flex flex-col gap-3">
           <h1 className=" font-black">با ویتسل</h1>
           <h1 className=" text-slate-500">اتاق خبر ویتسل</h1>
@@ -109,27 +109,33 @@ export const Footer = () => {
           <h1 className=" text-slate-500">حریم خصوصی</h1>
           <h1 className=" text-slate-500">گزارش باگ</h1>
         </div>
-        <div className=" flex flex-col gap-3">
+        <div className=" flex flex-col gap-3 col-span-2 invisible md:visible -mt-52 md:-mt-0 lg:col-span-1">
           <h1 className=" font-black">راهنمای خرید از ویتسل</h1>
           <h1 className=" text-slate-500">نحو ه ی ثبت سفارش</h1>
           <h1 className=" text-slate-500">رویه ی ارسال سفارش</h1>
           <h1 className=" text-slate-500">شیوه های پرداخت</h1>
         </div>
-        <div className=" flex flex-col gap-3">
-          <h1>همراه با ما باشید!</h1>
-          <div className=" flex gap-12 mt-4 mb-4">
-            <svg viewBox="0 0 24 24" className=" w-10">
-              <TelIcon />
-            </svg>
-            <svg viewBox="0 0 24 24" className=" w-10">
-              <WhatsIcon />
-            </svg>
-            <svg viewBox="0 0 24 24" className=" w-10">
-              <InstIcon />
-            </svg>
+        <div className=" flex flex-col gap-3 col-span-2 lg:col-span-1 ">
+          <div className=" grid lg:grid-cols-1  grid-cols-2  gap-5">
+            <div>
+              <h1 className=" truncate font-black">همراه با ما باشید!</h1>
+            </div>
+              <div className="  flex  justify-end lg:justify-start gap-12">
+                <svg viewBox="0 0 24 24" className=" w-10">
+                  <TelIcon />
+                </svg>
+                <svg viewBox="0 0 24 24" className=" w-10">
+                  <WhatsIcon />
+                </svg>
+                <svg viewBox="0 0 24 24" className=" w-10">
+                  <InstIcon />
+                </svg>
+              </div>
           </div>
-          <p>با ثبت ایمیل, از جدیدترین تخفیف ها با خبر شوید </p>
-          <div>
+          <p className=" lg:font-serif font-normal md:visible invisible -mt-12 md:-mt-0 ">
+            با ثبت ایمیل, از جدیدترین تخفیف ها با خبر شوید{" "}
+          </p>
+          <div className="">
             <form className=" grid  grid-cols-4 gap-2" onSubmit={handleSubmit}>
               <div className=" col-span-3">
                 <Input
@@ -141,7 +147,7 @@ export const Footer = () => {
               </div>
 
               <button
-                className=" bg-slate-300 rounded-xl w-24 h-10 mt-3"
+                className=" bg-slate-300 rounded-xl   h-10 mt-3"
                 type="submit"
               >
                 ثبت
@@ -150,55 +156,52 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className=" grid  grid-cols-2 bg-indigo-800 h-20 rounded-xl items-center px-5 text-white mt-5">
-        <div className=" flex gap-5">
+      <div className=" grid  lg:grid-cols-2 grid-cols-1 bg-indigo-800  rounded-xl items-center px-5 text-white py-4 gap-3 mt-5">
+        <div className=" flex justify-center lg:justify-start gap-5">
           <div>
             <IconVitsel />
           </div>
           <p className="text-center  text-2xl">دانلود اپلیکیشن ویتسل</p>
         </div>
-        <div className=" flex justify-end  gap-7">
-          <div className=" flex justify-center bg-slate-200 p-3 rounded-xl text-black font-black gap-3">
+        <div className=" flex lg:justify-end  justify-center gap-7">
+          <div className=" flex justify-center bg-slate-200 p-3 rounded-xl text-black font-black truncate items-center gap-3">
             <p>دریافت از مایکت</p>
             <MycatIcon />
           </div>
-          <div className=" flex justify-center bg-slate-200 p-3 rounded-xl text-black font-black gap-3">
+          <div className=" flex justify-center bg-slate-200 p-3 rounded-xl text-black font-black gap-3 truncate items-center">
             <p>دریافت از بازار</p>
             <BazarIcon />
           </div>
-          <div className=" flex justify-center bg-slate-200 p-3 rounded-xl text-black font-black gap-3">
+          <div className=" flex justify-center bg-slate-200 p-3 rounded-xl text-black font-black gap-3 truncate items-center">
             <p>دریافت مستقیم</p>
             <AndrIcon />
           </div>
         </div>
       </div>
       <div className=" grid grid-cols-5 mt-5">
-        <div className="p-4 col-span-3 ">
+        <div className="p-4 lg:col-span-3 col-span-5 ">
           <LongText text={loremIpsum} />
         </div>
-        <div className=" flex end-12 gap-5 absolute">
-          <svg className="w-32 bg-slate-200 rounded-2xl" viewBox="0 0 50 56">
-            <EtemadIcon1 />
-          </svg>
-          <svg className="w-32 bg-slate-200 rounded-2xl" viewBox="0 0 50 56">
-            <EtemadIcon2 />
-          </svg>
-          <svg className="w-32 bg-slate-200 rounded-2xl" viewBox="0 0 50 56">
-            <EtemadIcon3 />
-          </svg>
-          <svg className="w-32 bg-slate-200 rounded-2xl" viewBox="0 0 50 56">
-            <EtemadIcon4 />
-          </svg>
+        <div className="  flex  gap-5 lg:col-span-2 col-span-5 justify-center lg:justify-end ">
+          <div className=" w-28  p-1 flex justify-center  border-2 rounded-xl "  >
+              <img src=" https://www.digikala.com/statics/img/png/rezi.png"/>
+          </div>
+          <div className="w-28  flex p-1 justify-center  border-2 rounded-xl "  >
+            <img className="  w-16 " src="https://www.digikala.com/statics/img/png/kasbokar.png"/>
+          </div>
+          <div className="w-28  flex p-1 justify-center  border-2 rounded-xl "  >
+            <img className="  " src="https://pars.host/wp-content/uploads/2022/11/logo-01-1.svg"/>
+          </div>
         </div>
       </div>
       <div className=" border-t-2 border-slate-300 mt-14 text-center pt-4 font-thin">
-        <p>
+        <p className="text-sm lg:text-lg">
           برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و ذکر «منبع»
           کافیست. تمام حقوق اين وب‌سايت نیز برای شرکت نوآوران فن آوازه (فروشگاه
           آنلاین دیجی‌کالا) است.
         </p>
       </div>
-      <div className=" grid grid-cols-9 mt-5">
+      <div className=" grid lg:grid-cols-9 grid-cols-3 mt-5">
         <div className=" bg-slate-200 border-spacing-2 border-2 border-slate-300 p-7">
           <div className=" flex justify-center">
             <img
@@ -234,7 +237,8 @@ export const Footer = () => {
               alt=""
             />
           </div>
-        </div>        <div className=" bg-slate-200 border-spacing-2 border-2 border-slate-300 p-7">
+        </div>{" "}
+        <div className=" bg-slate-200 border-spacing-2 border-2 border-slate-300 p-7">
           <div className=" flex justify-center">
             <img
               className=""
@@ -287,7 +291,8 @@ export const Footer = () => {
               alt=""
             />
           </div>
-        </div>        <div className=" bg-slate-200 border-spacing-2 border-2 border-slate-300 p-7">
+        </div>{" "}
+        <div className=" bg-slate-200 border-spacing-2 border-2 border-slate-300 p-7">
           <div className=" flex justify-center">
             <img
               className=""
