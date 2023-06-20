@@ -17,7 +17,7 @@ export const Slider = () => {
   return (
     <div>
       <Swiper
-      className=""
+      className="  flex"
         // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
