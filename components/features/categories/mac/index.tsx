@@ -1,11 +1,11 @@
-import React from 'react'
+// import React from 'react'
 
-const index = () => {
-  return (
-    <div>
-      سوپر مارکت
-    </div>
-  )
-}
+// const index = () => {
+//   return (
+//     <div>
+//       سوپر مارکت
+//     </div>
+//   )
+// }
 
-export default index
+// export default index
