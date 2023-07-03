@@ -27,7 +27,7 @@ export const AmazingSugestion = () => {
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={2}
-        slidesPerView={"auto"}
+        slidesPerView={5}
         navigation={{ nextEl: nextRef.current, prevEl: prevRef.current }}
         onBeforeInit={(swiper) => {
           swiperRef.current = swiper;
