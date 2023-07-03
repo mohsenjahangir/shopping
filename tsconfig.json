@@ -19,9 +19,5 @@
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-    "exclude": [
-      "node_modules",
-      "typings"
-    ]
-  
+  "exclude": ["node_modules"]
 }
