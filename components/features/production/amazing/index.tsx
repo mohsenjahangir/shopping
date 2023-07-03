@@ -27,7 +27,7 @@ export const AmazingSugestion = () => {
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={2}
-        slidesPerView={5}
+        slidesPerView={4}
         navigation={{ nextEl: nextRef.current, prevEl: prevRef.current }}
         onBeforeInit={(swiper) => {
           swiperRef.current = swiper;
@@ -35,6 +35,18 @@ export const AmazingSugestion = () => {
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
         onInit={() => setInit(true)}
+        breakpoints={{
+          1280: { slidesPerView: 7 },
+          768: {
+            slidesPerView: 5,
+          },
+          450: {
+            slidesPerView: 3,
+          },
+          100: {
+            slidesPerView: 2,
+          },
+        }}
       >
         <SwiperSlide className=" ">
           <div className="  flex justify-center">
@@ -63,14 +75,18 @@ export const AmazingSugestion = () => {
               />
             </div>
             <div className=" flex  justify-between px-1">
-                <div className="bg-red-500 rounded-full  text-white   p-1 ">57%</div>
-                <div className="">538,000تومان</div>
+              <div className="bg-red-500 rounded-full  text-white   p-1 ">
+                57%
+              </div>
+              <div className="">538,000تومان</div>
             </div>
-            <div className="    line-through text-slate-400 flex justify-end ml-1">1,343,000</div>
+            <div className="    line-through text-slate-400 flex justify-end ml-1">
+              1,343,000
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className=" bg-white rounded-r-xl h-56 ">
+          <div className=" bg-white rounded-r-xl h-56 ">
             <div className="flex justify-center pt-2 ">
               <img
                 className=" w-36  "
@@ -78,14 +94,18 @@ export const AmazingSugestion = () => {
               />
             </div>
             <div className=" flex  justify-between px-1">
-                <div className="bg-red-500 rounded-full  text-white   p-1 ">57%</div>
-                <div className="">538,000تومان</div>
+              <div className="bg-red-500 rounded-full  text-white   p-1 ">
+                57%
+              </div>
+              <div className="">538,000تومان</div>
             </div>
-            <div className="    line-through text-slate-400 flex justify-end ml-1">1,343,000</div>
+            <div className="    line-through text-slate-400 flex justify-end ml-1">
+              1,343,000
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className=" bg-white rounded-r-xl h-56 ">
+          <div className=" bg-white rounded-r-xl h-56 ">
             <div className="flex justify-center pt-2 ">
               <img
                 className=" w-36  "
@@ -93,14 +113,18 @@ export const AmazingSugestion = () => {
               />
             </div>
             <div className=" flex  justify-between px-1">
-                <div className="bg-red-500 rounded-full  text-white   p-1 ">57%</div>
-                <div className="">538,000تومان</div>
+              <div className="bg-red-500 rounded-full  text-white   p-1 ">
+                57%
+              </div>
+              <div className="">538,000تومان</div>
             </div>
-            <div className="    line-through text-slate-400 flex justify-end ml-1">1,343,000</div>
+            <div className="    line-through text-slate-400 flex justify-end ml-1">
+              1,343,000
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className=" bg-white rounded-r-xl h-56 ">
+          <div className=" bg-white rounded-r-xl h-56 ">
             <div className="flex justify-center pt-2 ">
               <img
                 className=" w-36  "
@@ -108,14 +132,18 @@ export const AmazingSugestion = () => {
               />
             </div>
             <div className=" flex  justify-between px-1">
-                <div className="bg-red-500 rounded-full  text-white   p-1 ">57%</div>
-                <div className="">538,000تومان</div>
+              <div className="bg-red-500 rounded-full  text-white   p-1 ">
+                57%
+              </div>
+              <div className="">538,000تومان</div>
             </div>
-            <div className="    line-through text-slate-400 flex justify-end ml-1">1,343,000</div>
+            <div className="    line-through text-slate-400 flex justify-end ml-1">
+              1,343,000
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className=" bg-white rounded-r-xl h-56 ">
+          <div className=" bg-white rounded-r-xl h-56 ">
             <div className="flex justify-center pt-2 ">
               <img
                 className=" w-36  "
@@ -123,14 +151,18 @@ export const AmazingSugestion = () => {
               />
             </div>
             <div className=" flex  justify-between px-1">
-                <div className="bg-red-500 rounded-full  text-white   p-1 ">57%</div>
-                <div className="">538,000تومان</div>
+              <div className="bg-red-500 rounded-full  text-white   p-1 ">
+                57%
+              </div>
+              <div className="">538,000تومان</div>
             </div>
-            <div className="    line-through text-slate-400 flex justify-end ml-1">1,343,000</div>
+            <div className="    line-through text-slate-400 flex justify-end ml-1">
+              1,343,000
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className=" bg-white rounded-r-xl h-56 ">
+          <div className=" bg-white rounded-r-xl h-56 ">
             <div className="flex justify-center pt-2 ">
               <img
                 className=" w-36  "
@@ -138,14 +170,18 @@ export const AmazingSugestion = () => {
               />
             </div>
             <div className=" flex  justify-between px-1">
-                <div className="bg-red-500 rounded-full  text-white   p-1 ">57%</div>
-                <div className="">538,000تومان</div>
+              <div className="bg-red-500 rounded-full  text-white   p-1 ">
+                57%
+              </div>
+              <div className="">538,000تومان</div>
             </div>
-            <div className="    line-through text-slate-400 flex justify-end ml-1">1,343,000</div>
+            <div className="    line-through text-slate-400 flex justify-end ml-1">
+              1,343,000
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className=" bg-white rounded-r-xl h-56 ">
+          <div className=" bg-white rounded-r-xl h-56 ">
             <div className="flex justify-center pt-2 ">
               <img
                 className=" w-36  "
@@ -153,14 +189,18 @@ export const AmazingSugestion = () => {
               />
             </div>
             <div className=" flex  justify-between px-1">
-                <div className="bg-red-500 rounded-full  text-white   p-1 ">57%</div>
-                <div className="">538,000تومان</div>
+              <div className="bg-red-500 rounded-full  text-white   p-1 ">
+                57%
+              </div>
+              <div className="">538,000تومان</div>
             </div>
-            <div className="    line-through text-slate-400 flex justify-end ml-1">1,343,000</div>
+            <div className="    line-through text-slate-400 flex justify-end ml-1">
+              1,343,000
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className=" bg-white rounded-r-xl h-56 ">
+          <div className=" bg-white rounded-r-xl h-56 ">
             <div className="flex justify-center pt-2 ">
               <img
                 className=" w-36  "
@@ -168,14 +208,18 @@ export const AmazingSugestion = () => {
               />
             </div>
             <div className=" flex  justify-between px-1">
-                <div className="bg-red-500 rounded-full  text-white   p-1 ">57%</div>
-                <div className="">538,000تومان</div>
+              <div className="bg-red-500 rounded-full  text-white   p-1 ">
+                57%
+              </div>
+              <div className="">538,000تومان</div>
             </div>
-            <div className="    line-through text-slate-400 flex justify-end ml-1">1,343,000</div>
+            <div className="    line-through text-slate-400 flex justify-end ml-1">
+              1,343,000
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className=" bg-white rounded-r-xl h-56 ">
+          <div className=" bg-white rounded-r-xl h-56 ">
             <div className="flex justify-center pt-2 ">
               <img
                 className=" w-36  "
@@ -183,14 +227,18 @@ export const AmazingSugestion = () => {
               />
             </div>
             <div className=" flex  justify-between px-1">
-                <div className="bg-red-500 rounded-full  text-white   p-1 ">57%</div>
-                <div className="">538,000تومان</div>
+              <div className="bg-red-500 rounded-full  text-white   p-1 ">
+                57%
+              </div>
+              <div className="">538,000تومان</div>
             </div>
-            <div className="    line-through text-slate-400 flex justify-end ml-1">1,343,000</div>
+            <div className="    line-through text-slate-400 flex justify-end ml-1">
+              1,343,000
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className=" bg-white rounded-r-xl h-56 ">
+          <div className=" bg-white rounded-r-xl h-56 ">
             <div className="flex justify-center pt-2 ">
               <img
                 className=" w-36  "
@@ -198,14 +246,18 @@ export const AmazingSugestion = () => {
               />
             </div>
             <div className=" flex  justify-between px-1">
-                <div className="bg-red-500 rounded-full  text-white   p-1 ">57%</div>
-                <div className="">538,000تومان</div>
+              <div className="bg-red-500 rounded-full  text-white   p-1 ">
+                57%
+              </div>
+              <div className="">538,000تومان</div>
             </div>
-            <div className="    line-through text-slate-400 flex justify-end ml-1">1,343,000</div>
+            <div className="    line-through text-slate-400 flex justify-end ml-1">
+              1,343,000
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className=" bg-white rounded-r-xl h-56 ">
+          <div className=" bg-white rounded-r-xl h-56 ">
             <div className="flex justify-center pt-2 ">
               <img
                 className=" w-36  "
@@ -213,14 +265,18 @@ export const AmazingSugestion = () => {
               />
             </div>
             <div className=" flex  justify-between px-1">
-                <div className="bg-red-500 rounded-full  text-white   p-1 ">57%</div>
-                <div className="">538,000تومان</div>
+              <div className="bg-red-500 rounded-full  text-white   p-1 ">
+                57%
+              </div>
+              <div className="">538,000تومان</div>
             </div>
-            <div className="    line-through text-slate-400 flex justify-end ml-1">1,343,000</div>
+            <div className="    line-through text-slate-400 flex justify-end ml-1">
+              1,343,000
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className=" bg-white rounded-r-xl h-56 ">
+          <div className=" bg-white rounded-r-xl h-56 ">
             <div className="flex justify-center pt-2 ">
               <img
                 className=" w-36  "
@@ -228,10 +284,14 @@ export const AmazingSugestion = () => {
               />
             </div>
             <div className=" flex  justify-between px-1">
-                <div className="bg-red-500 rounded-full  text-white   p-1 ">57%</div>
-                <div className="">538,000تومان</div>
+              <div className="bg-red-500 rounded-full  text-white   p-1 ">
+                57%
+              </div>
+              <div className="">538,000تومان</div>
             </div>
-            <div className="    line-through text-slate-400 flex justify-end ml-1">1,343,000</div>
+            <div className="    line-through text-slate-400 flex justify-end ml-1">
+              1,343,000
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -245,7 +305,7 @@ export const AmazingSugestion = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-      
+
       <div className=" grid  grid-cols-4  gap-4 ">
         <div className="col-start-1 z-10 -mt-32 col-end-3 ...">
           <button
