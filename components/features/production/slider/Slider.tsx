@@ -15,9 +15,8 @@ export const Slider = () => {
   const swiperRef = useRef<SwiperType>();
   const arrow='>'
   return (
-    <div>
+    <div >
       <Swiper
-      className="  flex"
         // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
@@ -34,19 +33,19 @@ export const Slider = () => {
         onInit={() => setInit(true)}
       >
         <SwiperSlide>
-          <img src="https://dkstatics-public.digikala.com/digikala-adservice-banners/6904bb88f4978c65ae58f87e4409a7575725799d_1680516760.jpg?x-oss-process=image/quality,q_95/format,webp" />
+          <img className=" h-56 lg:h-full w-full" src="https://dkstatics-public.digikala.com/digikala-adservice-banners/6904bb88f4978c65ae58f87e4409a7575725799d_1680516760.jpg?x-oss-process=image/quality,q_95/format,webp" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://dkstatics-public.digikala.com/digikala-adservice-banners/e297d32aefe0beb4e7484f81d7ae86fc27cbe567_1684579991.jpg?x-oss-process=image/quality,q_95/format,webp" />
+          <img className=" h-56 lg:h-full w-full" src="https://dkstatics-public.digikala.com/digikala-adservice-banners/e297d32aefe0beb4e7484f81d7ae86fc27cbe567_1684579991.jpg?x-oss-process=image/quality,q_95/format,webp" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://dkstatics-public.digikala.com/digikala-adservice-banners/7f2c2bc4e9c51b0617f80db476dcee709218f58d_1684735985.gif?x-oss-process=image?x-oss-process=image/format,webp" />
+          <img className=" h-56 lg:h-full w-full" src="https://dkstatics-public.digikala.com/digikala-adservice-banners/7f2c2bc4e9c51b0617f80db476dcee709218f58d_1684735985.gif?x-oss-process=image?x-oss-process=image/format,webp" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://dkstatics-public.digikala.com/digikala-adservice-banners/250d2c3ce84148dbf981598506e291e0a687bacb_1684581682.jpg?x-oss-process=image/quality,q_95/format,webp" />
+          <img className=" h-56 lg:h-full w-full" src="https://dkstatics-public.digikala.com/digikala-adservice-banners/250d2c3ce84148dbf981598506e291e0a687bacb_1684581682.jpg?x-oss-process=image/quality,q_95/format,webp" />
         </SwiperSlide>
       </Swiper>
-      <div className="absolute z-10 -mt-20 mr-12  flex  justify-start gap-3    ">
+      <div className="absolute z-10 -mt-20 mr-12  flex  justify-start gap-3  invisible lg:visible   ">
           <button className=" bg-slate-100 hover:bg-slate-200 p-3  active:bg-slate-400 rounded-full" ref={nextRef}><SlArrowRight /></button>
           <button className="  rounded-full bg-slate-100 hover:bg-slate-200 p-3  active:bg-slate-400  rotate-180 " ref={prevRef}><SlArrowRight/></button>
         </div>
