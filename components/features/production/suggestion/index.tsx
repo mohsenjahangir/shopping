@@ -80,14 +80,14 @@ export const Suggestion = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   return (
-    <>
+    <div className="">
       <div className=" mt-8 ">
         <div>
           <h1 className=" flex justify-center  text-2xl font-semibold">
             پیشنهاد دیجی کالا
           </h1>
         </div>
-        <div className=" flex justify-center mx-4 mt-8">
+        <div className=" flex justify-center mt-8">
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             navigation={{ nextEl: nextRef.current, prevEl: prevRef.current }}
@@ -104,6 +104,7 @@ export const Suggestion = () => {
                 slidesPerView: 2,
               },
             }}
+            
           >
             {images2.map((item) => (
               <SwiperSlide>
@@ -121,25 +122,25 @@ export const Suggestion = () => {
             ))}
           </Swiper>
         </div>
-        <div className=" grid  grid-cols-4  gap-4 ">
-          <div className="col-start-1 z-10 -mt-56 col-end-3 ...">
+        {/* <div className=" grid  grid-cols-4   gap-4 ">
+          <div className="col-start-1 z-10   col-end-3 ...">
             <button
-              className=" absolute border-slate-400 border-2 bg-white hover:bg-slate-200 p-3    active:bg-slate-400 rounded-full"
+              className=" absolute border-slate-400   border-2 bg-white hover:bg-slate-200 p-3    active:bg-slate-400 rounded-full"
               ref={prevRef}
             >
               <SlArrowRight />
             </button>
           </div>
-          <div className="col-end-7 ml-12 -mt-56 z-10  col-span-2 ...">
+          <div className="col-end-7 ml-12  z-10  col-span-2 ...">
             <button
-              className=" absolute rounded-full border-slate-400 border-2 bg-white hover:bg-slate-200 p-3 col-start-2  active:bg-slate-400  rotate-180 "
+              className=" absolute rounded-full  border-slate-400 border-2 bg-white hover:bg-slate-200 p-3 col-start-2  active:bg-slate-400  rotate-180 "
               ref={nextRef}
             >
               <SlArrowRight />
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
-    </>
+    </div>
   );
 };

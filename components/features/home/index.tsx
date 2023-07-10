@@ -35,7 +35,7 @@ export const HomePage = () => {
         <Services/>
         <AmazingSugestion/>
         <Suggestion/>
-        <div className=" flex justify-end">
+        <div className=" flex justify-end absolute z-50">
           <button
             className={`fixed bottom-8 right-8 bg-gray-800 text-white p-4 rounded-full transition-opacity ${
               isVisible ? "opacity-100" : "opacity-0"
