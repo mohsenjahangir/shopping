@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { FaArrowUp } from "react-icons/fa";
 import { Services } from "./services";
 import { AmazingSugestion } from "../production/amazing";
+import { Suggestion } from "../production/suggestion";
 export const HomePage = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -33,6 +34,7 @@ export const HomePage = () => {
         <Slider />
         <Services/>
         <AmazingSugestion/>
+        <Suggestion/>
         <div className=" flex justify-end">
           <button
             className={`fixed bottom-8 right-8 bg-gray-800 text-white p-4 rounded-full transition-opacity ${
