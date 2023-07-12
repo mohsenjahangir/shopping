@@ -81,7 +81,7 @@ export const Suggestion = () => {
   const nextRef = useRef(null);
   return (
     <div className="">
-      <div className=" mt-8 ">
+      <div className=" mt-8   mx-8">
         <div>
           <h1 className=" flex justify-center  text-2xl font-semibold">
             پیشنهاد دیجی کالا
@@ -91,7 +91,7 @@ export const Suggestion = () => {
           <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             navigation={{ nextEl: nextRef.current, prevEl: prevRef.current }}
-            className=" border border-slate-500 "
+            className=" border border-slate-500 rounded-xl "
             breakpoints={{
               1280: { slidesPerView: 7 },
               768: {
