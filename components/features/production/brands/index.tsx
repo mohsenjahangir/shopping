@@ -81,6 +81,16 @@ export const Brands = () => {
       img: "https://dkstatics-public.digikala.com/digikala-brands/100014253.png?x-oss-process=image/resize,m_lfit,h_160,w_160/quality,q_80",
     },
   ];
+  const images3 = [
+    {
+      src: "https://dkstatics-public.digikala.com/digikala-adservice-banners/cf8b5a74a96b75c538ea3c87bb00fd463ec6729b_1687592731.jpg?x-oss-process=image/quality,q_95/format,webp",
+      alt: "",
+    },
+    {
+      src: "https://dkstatics-public.digikala.com/digikala-adservice-banners/355f5293a9d23fde74982956b09439c992dd3003_1688760908.jpg?x-oss-process=image/quality,q_95/format,webp",
+      alt: "",
+    },
+  ];
   return (
     < div className=" mx-8">
       <div className="  py-5 rounded-xl  border-2 px-1 mt-8">
@@ -143,6 +153,13 @@ export const Brands = () => {
           </div>
         </div>
       </div>
+      <div className=" lg:flex justify-between    ">
+          {images3.map((item) => (
+            <div>
+              <img className=" w-full mt-4 rounded-2xl" src={item.src} alt={item.alt} />
+            </div>
+          ))}
+        </div>
     </div>
   );
 };

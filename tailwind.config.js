@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      margin: {
+        '46': '184px',
+      },
       gradientColorStops: {
         'custom-gradient': ['rgba(209, 24, 133, 1)', 'rgba(255, 205, 255, 1)'],
       },

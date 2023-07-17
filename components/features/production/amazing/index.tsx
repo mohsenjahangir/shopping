@@ -163,8 +163,9 @@ export const AmazingSugestion = () => {
     },
   ];
   return (
-    <>
-      <div className=" bg-red-500 py-5 rounded-xl mx-5 px-1 mt-8">
+    <div className=" mx-4">
+
+      <div className=" bg-red-500 py-5 rounded-xl  px-1 mt-8">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={2}
@@ -296,6 +297,6 @@ export const AmazingSugestion = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
