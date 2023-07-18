@@ -92,7 +92,7 @@ export const Brands = () => {
     },
   ];
   return (
-    < div className=" mx-8">
+    < div className=" lg:mx-8">
       <div className="  py-5 rounded-xl  border-2 px-1 mt-8">
         <div className=" flex justify-center text-center text-2xl mb-4 gap-3">
           <StarIcon />

@@ -163,8 +163,7 @@ export const AmazingSugestion = () => {
     },
   ];
   return (
-    <div className=" mx-4">
-
+    <div className=" lg:mx-4">
       <div className=" bg-red-500 py-5 rounded-xl  px-1 mt-8">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}

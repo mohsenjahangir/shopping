@@ -81,7 +81,7 @@ export const Suggestion = () => {
   const nextRef = useRef(null);
   return (
     <div className="">
-      <div className=" mt-8   mx-8">
+      <div className=" mt-8   lg:mx-8">
         <div>
           <h1 className=" flex justify-center  text-2xl font-semibold">
             پیشنهاد دیجی کالا

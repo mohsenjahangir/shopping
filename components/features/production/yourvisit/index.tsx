@@ -75,7 +75,7 @@ export const Your_visit = () => {
   ];
   const arrow = ">";
   return (
-    < div className=" flex justify-center mx-8">
+    < div className=" flex justify-center lg:mx-8">
       <div className="  grid lg:grid-cols-4 grid-cols-1  mt-4  lg:border rounded-xl">
         <div className=" lg:border-l">
           <div className="grid grid-cols-1  mr-4 mt-4">
