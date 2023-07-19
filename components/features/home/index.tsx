@@ -8,6 +8,7 @@ import { Suggestion } from "../production/suggestion";
 import { Brands } from "../production/brands";
 import { Your_visit } from "../production/yourvisit";
 import { Digi_plus } from "../production/digiplus";
+import { Your_visit_recently } from "../production/yourvisit_recently";
 export const HomePage = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -44,6 +45,7 @@ export const HomePage = () => {
           <Brands />
           <Your_visit />
           <Digi_plus/>
+          <Your_visit_recently/>
         </div>
 
         <div className=" flex justify-end absolute z-50">
