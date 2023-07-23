@@ -13,8 +13,6 @@ import MostSellIcon from "../../../public/svg/mostsell.svg";
 import DiscountIcon from "../../../public/svg/discount.svg";
 import Amazing from "../../../public/svg/amazing.svg";
 import { useState } from "react";
-
-// Define mock data for navigation items
 const navItems = [
   {
     name: "سوپر مارکت",
