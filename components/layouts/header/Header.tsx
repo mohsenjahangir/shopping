@@ -12,7 +12,7 @@ import MarketIcon from "../../../public/svg/market.svg";
 import MostSellIcon from "../../../public/svg/mostsell.svg";
 import DiscountIcon from "../../../public/svg/discount.svg";
 import Amazing from "../../../public/svg/amazing.svg";
-import { useState } from "react";
+
 const navItems = [
   {
     name: "سوپر مارکت",
@@ -87,7 +87,7 @@ export const Header = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-end gap-5 lg:ml-28 ">
+        <Link className="flex justify-end gap-5 lg:ml-28 " href="/login">
           <div className="lg:gap-2 flex-row-reverse lg:flex-row flex lg:border-2 p-2 rounded-lg">
             <div>
               <LoginIcon />
@@ -97,7 +97,7 @@ export const Header = () => {
           <div className="self-center">
             <CartIcon />
           </div>
-        </div>
+        </Link>
         
       </div>
       <div className="lg:flex lg:justify-between gap-4  hidden lg:visible  p-2 lg:pr-10  lg:pt-24 ">
