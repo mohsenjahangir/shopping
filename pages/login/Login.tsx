@@ -24,8 +24,6 @@ const Login = () => {
       setBorderColor("border-red-500");
     } else {
       const iranianNumberRegex = /^09\d{9}$/;
-
-      // Email address should have @ and .
       const emailRegex = /[\w-]+@[\w-]+\.[\w-]+/;
 
       if (iranianNumberRegex.test(inputValue) || emailRegex.test(inputValue)) {
