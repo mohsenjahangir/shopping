@@ -8,7 +8,7 @@ const Login = () => {
 
   const [borderColor, setBorderColor] = useState("border-gray-300");
 
-  const handleChange = (e) => {
+  const handleChange = (e:any) => {
     setInputValue(e.target.value);
 
     setErrorMessage("");
@@ -16,7 +16,7 @@ const Login = () => {
     setBorderColor("border-gray-300");
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault();
 
     if (!inputValue) {
